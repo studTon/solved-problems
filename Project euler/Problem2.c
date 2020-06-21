@@ -10,14 +10,12 @@ exceed four million, find the sum of the even-valued terms.*/
 #include<stdio.h>
 int main(){
 	int i;
-	int N, i;
 	int num, numA, numB, sum;
-	N = 33;
 	numA = 1;
 	numB = 0; 
 	i = 0; 
 	sum = 0;
-	while( i < N){
+	while( num < 4000000 ){
 		if(numA % 2 == 0){
 			printf("NUM: %d\n", numA);
 			sum += numA;
