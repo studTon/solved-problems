@@ -25,7 +25,7 @@ int main(){
 		if(i == 2){
 			if(num % prime == 0){
 				num /= prime;
-				printf("%d\n", prime);
+				printf("%d\n", prime, num);
 				if(num == 1)
 					printf("Largest prime factor: %d\n", prime);
 			}
