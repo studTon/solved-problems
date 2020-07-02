@@ -3,7 +3,7 @@
 What is the largest prime factor of the number 600851475143 ?*/
 #include <stdio.h>
 int main(){
-	int long long num; /*num is the number we want to
+	long long num; /*num is the number we want to
 	discover the largest prime factor.*/
 	int prime;
 	int i;
@@ -12,6 +12,7 @@ int main(){
 	
 	printf("Type the number:\n");
 	scanf("%d", &num);
+	printf("Size -> %d\n", sizeof(num));
 	printf("The number: %d\nPrime factors:\n", num);
 	prime = 2;
 	while(prime < 1000){
@@ -25,7 +26,7 @@ int main(){
 		if(i == 2){
 			if(num % prime == 0){
 				num /= prime;
-				printf("%d\n", prime, num);
+				printf("%d ---- %d\n", prime, num);
 				if(num == 1)
 					printf("Largest prime factor: %d\n", prime);
 			}
